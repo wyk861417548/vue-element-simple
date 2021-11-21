@@ -2,12 +2,13 @@
   <!-- j-full-curbox 当前元素占满全屏  j-flex-col flex垂直布局 -->
   <div ref="tableWrapper" style="width:100%;height:100%;">
  
-    <el-table :data="tableData" :height="height || tableH==0?150:tableH">
+    <el-table @selection-change="handleSelectionChange" :data="tableData" :height="height || tableH==0?150:tableH">
       <el-table-column
         v-if="selection"
         type="selection"
         width="70"
         fixed="left"
+        :selectable="selectable"
         >
       </el-table-column>
 
@@ -131,6 +132,16 @@ export default {
           this.tableH = this.$refs.tableWrapper.getBoundingClientRect().height -pagination-this.topHight;
         }
       })
+    },
+
+     // 监听勾选的行
+    handleSelectionChange(data){
+      this.$emit('handleSelectionChange',data)
+    },
+
+     // 监听当前行是否可选  show:true 禁止
+    selectable(row){
+      return !row.show;
     },
 
     // -----------------------------分页---------------------
