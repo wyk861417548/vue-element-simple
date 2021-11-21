@@ -1,0 +1,97 @@
+// 本项目 基本色 
+
+/* 背景颜色 */
+// $bg-color: #f1f1f1;
+// $bg-color-grey: #F5F5F5;
+// $bg-color-primary: #adb739;
+
+/* 文字颜色 主色 */ 
+$color-primary: #006667;
+$color-success: #108ee9;
+$color-warning: #FAB714;
+$color-error: #D12E32;
+
+
+/* 文字颜色 辅助色 */ 
+$color-orange: #ffa084;
+$color-purple: #806ccb;
+$color-blue: #508aff;
+
+$color-light-orange:#fff0e8;
+$color-light-purple: #f6f2ff;
+$color-light-blue: #e4f6fe;
+
+/* 背景颜色 */
+$bg-color: #e4f6fe;
+$bg-color-grey: #f6f2ff;
+$bg-color-primary: #fff0e8;
+
+
+
+.page-bg{background-color: #f1f1f1;}
+.bd-icon{padding-left: 10px;border-left: 8px solid;border-radius: 5px;border-color: #006667;font-size: 22px;}
+.bd-line{width: 1px;height:1rem;margin: 0 20px;background: #999;transform: scaleX(.5);}
+.bd-divider{display: block;height: 1px;width: 100%;background-color: #DCDFE6;}
+
+/*----------------- fade-transform 过渡动画 --------------------*/
+.fade-transform-leave-active,
+.fade-transform-enter-active {transition: all .3s;}
+.fade-transform-enter {opacity: 0;transform: translateX(-30px);}
+.fade-transform-leave-to {opacity: 0;transform: translateX(30px);}
+
+// --------------------------------------------------------------------element样式修改--------------------------------------------
+// element el-card组件包裹table表格  table动态计算高度  el-card__body需要设置100%
+.el-card__body{width: 100%;height: 100%;box-sizing: border-box;}
+
+// 修改element button type=primary样式
+// 修改element button type=primary和default样式
+// .el-button--primary,.el-button--default{padding: 10px 25px;}
+// .el-button--default:focus,.el-button--default:hover {background: #f1f9f9 !important;border-color: #a9c8c8 !important; color: #006667;}
+// .el-button--primary{color: #fff;background-color: #006667;border-color: #006667;}
+// .el-button--primary:focus,.el-button--primary:hover {background: #13797a !important;border-color: #13797a !important; color: #fff;}
+
+// //新增element button class el-button-deep 
+// .el-button-deep{color: #fff;background-color: #2a4734;border-color: #2a4734;}
+// .el-button-deep:focus,.el-button-deep:hover {background: rgba(42,71,52,.94) !important;border-color: rgba(42,71,52,.94)!important; color: #fff;}
+
+// // 修改element button type=text 样式
+// .el-button--text{color: #006667;font-weight: 600;}
+// .el-button--text:hover { color: #1da1a3;}
+
+// // 设置禁止点击文字颜色
+// .isBan{color: #ddd;font-weight: 600;}
+// .isBan:focus,.isBan:hover { color: #ddd;cursor: auto;}
+
+
+
+// // 修改element tabs 颜色样式
+// .el-tabs__item.is-active{color: #006666;}
+// .el-tabs__item:hover{color: #006666;}
+// .el-tabs__active-bar{background-color: #006666;}
+
+
+// // 修改element el-checkbox 颜色样式
+// .el-checkbox .el-checkbox__input.is-checked .el-checkbox__inner{background-color: #006666;border-color: #006666;}
+// .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{background-color: #006666;border-color: #006666;}
+// .el-radio .el-radio__input.is-checked .el-radio__inner{background-color: #006666;border-color: #006666;}
+// .el-radio.is-checked .el-radio__label{color: #006666;}
+
+// // 修改element  dialog 弹窗 样式
+// .el-dialog__header{
+//   background-color: #006666;color: #fff !important;
+//   .el-dialog__title,i{color: #fff !important;}
+// }
+
+// // 修改element form 样式
+// .el-form .el-form-item__label{
+//   padding-bottom:0;
+// }
+
+
+// // 修改 element el-dropdown样式
+// .el-dropdown .el-dropdown-link{
+//   color: #006667;font-weight: 600;
+// }
+// .el-dropdown .el-dropdown-link:hover{
+//   color: #1da1a3
+// }
